@@ -18,6 +18,11 @@ header {
   height: 90px;
 }
 
+a {
+  color: #fff;
+  &:visited, &:active { color: #fff; }
+}
+
 h1,h2,h3,h4,h5,h6 {
   margin: 0;
   padding: 0;
@@ -58,6 +63,9 @@ div#main {
   &:hover {
     color: #fff;
     .box-shadow(0 0 10px rgba(0, 0, 0, 0.4));
+  }
+  &:active {
+    .gradient(#B8253F, #FD3353, #B8253F);
   }
 }
 
